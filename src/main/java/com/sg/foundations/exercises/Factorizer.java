@@ -21,7 +21,6 @@ public class Factorizer {
         System.out.println("What number would you like to factor? ");
         stringNum = sc.nextLine();
         num = Integer.parseInt(stringNum);
-        
         int[] factors = new int[num];
         
         for (i = 0; i < num; i++){
@@ -37,7 +36,7 @@ public class Factorizer {
             }
         }
         j++;
-        factors[j] = num;
+        factors[j] = num; 
         numOfFactors++;
         System.out.println("The factors of " + num + " are:");
         for (k = 0; k < j+1; k++){
