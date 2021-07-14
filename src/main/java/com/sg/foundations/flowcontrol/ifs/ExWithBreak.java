@@ -5,13 +5,19 @@
  */
 package com.sg.foundations.flowcontrol.ifs;
 
+import java.util.Scanner;
+
 /**
  *
  * @author aboxi
  */
 public class ExWithBreak {
     public static void main(String[] args) {
-        int day = 3;
+        int day;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number for a day of a week: ");
+        String stringDay = sc.nextLine();
+        day = Integer.parseInt(stringDay);
         String dayType;
         
         switch (day) {
@@ -21,7 +27,7 @@ public class ExWithBreak {
             case 4:
             case 5:
                 dayType = "Weekday";
-                // No berak here causes every day with 1 through 7 to be Weekend
+                break; // No berak here causes every day with 1 through 7 to be Weekend
             case 6:
             case 7:
                 dayType = "Weekend";
